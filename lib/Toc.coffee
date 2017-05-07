@@ -202,7 +202,7 @@ class Toc
   ___createLink: (name) ->
     hash = new String name
     hash = hash.toLowerCase().replace /\s/g, "-"
-    hash = hash.replace /[^a-z0-9\u4e00-\u9fa5äüöáàéèíóúñç\-]/g, ""
+    hash = hash.replace /[^a-z0-9\u4e00-\u9fa5äüöáàéèíóúñçy\-]/g, ""
     if hash.indexOf("--") > -1
       hash = hash.replace /(-)+/g, "-"
     if name.indexOf(":-") > -1
